@@ -83,6 +83,15 @@ public class AntrianLayanan {
     public int getJumlahAntrian() {
         return size;
     }
+    public void LihatAkhir() {
+    if (!IsIsEmpty()) {
+        System.out.println("Antrian paling belakang: " + antrian[rear].nim + " " 
+            + antrian[rear].nama + " " + antrian[rear].absen + " " 
+            + antrian[rear].ipk);
+    } else {
+        System.out.println("Antrian masih kosong");
+    }
+}
   
 }
 
